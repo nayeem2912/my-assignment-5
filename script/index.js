@@ -19,7 +19,7 @@ const checkboxCount = getInnerTextByID('checkbox-count');
  }
 
  document.getElementById('complete-btn-6').addEventListener('click', function(){
-    alert('congrates!!! You have completed all the current task.')
+    alert('congratulation!!! You have completed all the current task.')
  })
 
  document.getElementById('complete-1').addEventListener('click', function(){
@@ -33,6 +33,9 @@ const checkboxCount1 = checkboxCount + 1;
 
     const container = document.getElementById("history-container");
 
+    const now = new Date();
+    let Time = now.toLocaleTimeString();
+
       const text1 = document.getElementById('p-text').innerText;
             const div = document.createElement("div");
 div.classList.add("bg-[#F4F7FF]");
@@ -41,7 +44,7 @@ div.classList.add("text-center");
 div.classList.add("mt-4");
 
           div.innerHTML = `
-         <p> You have Complete ${text1} at 12:48:15 PM </p>
+         <p> You have Complete ${text1} at ${Time} </p>
           `
           container.appendChild(div)
  })
@@ -54,6 +57,9 @@ const checkboxCount1 = checkboxCount + 2;
    document.getElementById('checkbox-count').innerText = checkboxCount1 ;
 
     const container = document.getElementById("history-container");
+ 
+    const now = new Date();
+       let Time = now.toLocaleTimeString();
 
       const text2 = document.getElementById('p-text-2').innerText;
             const div = document.createElement("div");
@@ -63,7 +69,7 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text2} at 12:48:15 PM </p>
+         <p> You have Complete ${text2} at ${Time}  </p>
           `
           container.appendChild(div)
  })
@@ -76,6 +82,9 @@ const checkboxCount1 = checkboxCount + 2;
            document.getElementById('checkbox-count').innerText = checkboxCount1 ;
     const container = document.getElementById("history-container");
 
+    const now = new Date();
+    let Time = now.toLocaleTimeString();
+
       const text3 = document.getElementById('p-text-3').innerText;
             const div = document.createElement("div");
             div.classList.add("bg-[#F4F7FF]");
@@ -84,7 +93,7 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text3} at 12:48:15 PM </p>
+         <p> You have Complete ${text3} at ${Time} </p>
           `
           container.appendChild(div)
  })
@@ -99,6 +108,9 @@ const checkboxCount1 = checkboxCount + 2;
 
     const container = document.getElementById("history-container");
 
+    const now = new Date();
+    let Time = now.toLocaleTimeString();
+
       const text4 = document.getElementById('p-text-4').innerText;
             const div = document.createElement("div");
             div.classList.add("bg-[#F4F7FF]");
@@ -107,7 +119,7 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text4} at 12:48:15 PM </p>
+         <p> You have Complete ${text4} at ${Time} </p>
           `
           container.appendChild(div)
  })
@@ -121,7 +133,9 @@ const checkboxCount1 = checkboxCount + 2;
 
 
     const container = document.getElementById("history-container");
-
+       const now = new Date();
+       let Time = now.toLocaleTimeString();
+       
       const text5 = document.getElementById('p-text-5').innerText;
             const div = document.createElement("div");
             div.classList.add("bg-[#F4F7FF]");
@@ -130,7 +144,7 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text5} at 12:48:15 PM </p>
+         <p> You have Complete ${text5} at  ${Time} </p>
           `
           container.appendChild(div)
  })
@@ -145,6 +159,9 @@ const checkboxCount1 = checkboxCount + 2;
 
     const container = document.getElementById("history-container");
 
+    const now = new Date();
+    let Time = now.toLocaleTimeString();
+
       const text6 = document.getElementById('p-text-6').innerText;
             const div = document.createElement("div");
             div.classList.add("bg-[#F4F7FF]");
@@ -153,7 +170,7 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text6} at 12:48:15 PM </p>
+         <p> You have Complete ${text6} at ${Time} </p>
           `
           container.appendChild(div)
  })
@@ -163,4 +180,14 @@ const checkboxCount1 = checkboxCount + 2;
    document.getElementById('history-container').innerHTML = "";
  })
  
+document.getElementById('new-date').textContent = new Date().toDateString();
 
+
+
+document.getElementById('bg-btn').addEventListener('click', function(){
+   let red = Math.floor(Math.random() * 256);
+   let green = Math.floor(Math.random() * 256);
+   let blue = Math.floor(Math.random() * 256);
+   document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})
+   `
+})
