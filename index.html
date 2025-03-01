@@ -35,12 +35,12 @@
                     <div class="w-[123px] h-[64px] mr-9">
                         <div class="bg-[#F4F7FF] btn-circle flex justify-center items-center space-x-6">
                             <img class="py-4" src="assets/checkbox.png" alt="">
-                            <h1 class="font-bold text-[32px]">23</h1>
+                            <h1 id="checkbox-count" class="font-bold text-[32px]">23</h1>
 
                         </div>
 
                     </div>
-                 <div  class="w-[64px] h-[64px] border-none bg-[#F4F7FF] btn btn-circle">
+                 <div id="bg-btn" class="w-[64px] h-[64px] border-none bg-[#F4F7FF] btn btn-circle">
                     <img class="w-[40px]" src="assets/theme-btn.png" alt="">
                  </div>
                  </div>
@@ -58,10 +58,10 @@
                          </div>
                         <div>
                             <p class="text-[#00303C] font-medium text-[16px]">Task Assigned</p>
-                            <h1 class="text-[#00303C] font-bold text-[32px]">05</h1>
+                            <h1 id="task-count" class="text-[#00303C] font-bold text-[32px]">6</h1>
                         </div>
                     </div>
-                    <div class="w-[400px] h-[128px]  rounded-xl flex bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] justify-center items-center space-x-4">
+                    <div id="discover-btn" class="w-[400px] h-[128px]  rounded-xl flex bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] justify-center items-center space-x-4">
                         <img src="assets/board.png" alt="">
                         <p class="text-[24px] font-medium text-white ">Discover Something <br> New Today!</p>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="w-[300px] h-[317px]  rounded-xl bg-[#F4F7FF]">
                         <div class="w-[275px] h-[200px]  mt-4 mx-auto space-y-5">
                             <p class="w-[114px] h-[40px] text-[16px] font-normal text-[#00303C] bg-slate-50 text-center py-2 rounded-lg ">ShopEase </p>
-                            <p class="text-[24px] font-medium text-[#00303C]">Fix Mobile Button Issue </p>
+                            <p id="p-text" class="text-[24px] font-medium text-[#00303C]">Fix Mobile Button Issue </p>
                             <p class="w-[275px] h-[92px] bg-slate-50 p-4 overflow-hidden text-[#4e4d4d] rounded-lg ">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly
@@ -91,13 +91,13 @@
                             <p class="text-[#00303C] text-[14px]">Deadline</p>
                             <p class="text-[#00303C] text-[18px] font-semibold">21 March 2025</p>
                           </div>
-                          <button class="btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
+                          <button id="complete-1" class="complete-button btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
                         </div>
                     </div>
                     <div class="w-[300px] h-[317px]  rounded-xl bg-[#F4F7FF]">
                         <div class="w-[275px] h-[200px]  mt-4 mx-auto space-y-5">
                             <p class="w-[114px] h-[40px] text-[16px] font-normal text-[#00303C] bg-slate-50 text-center py-2 rounded-lg ">CloudSync</p>
-                            <p class="text-[24px] font-medium text-[#00303C]">Add Dark Mode</p>
+                            <p id="p-text-2" class="text-[24px] font-medium text-[#00303C]">Add Dark Mode</p>
                             <p class="w-[275px] h-[92px] bg-slate-50 p-4 overflow-hidden text-[#4e4d4d] rounded-lg ">
                                 Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                             </p>
@@ -107,13 +107,13 @@
                             <p class="text-[#00303C] text-[14px]">Deadline</p>
                             <p class="text-[#00303C] text-[18px] font-semibold">21 March 2025</p>
                           </div>
-                          <button class="btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
+                          <button  id="complete-2" class="complete-button btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
                         </div>
                     </div>
                     <div class="w-[300px] h-[317px]  rounded-xl bg-[#F4F7FF]">
                         <div class="w-[275px] h-[200px]  mt-4 mx-auto space-y-5">
                             <p class="w-[114px] h-[40px] text-[16px] font-normal text-[#00303C] bg-slate-50 text-center py-2 rounded-lg ">SwiftPay</p>
-                            <p class="text-[24px] font-medium text-[#00303C]">Optimize  Home page</p>
+                            <p id="p-text-3" class="text-[24px] font-medium text-[#00303C]">Optimize  Home page</p>
                             <p class="w-[275px] h-[92px] bg-slate-50 p-4 overflow-hidden text-[#4e4d4d] rounded-lg ">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly
@@ -124,13 +124,13 @@
                             <p class="text-[#00303C] text-[14px]">Deadline</p>
                             <p class="text-[#00303C] text-[18px] font-semibold">21 March 2025</p>
                           </div>
-                          <button class="btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
+                          <button id="complete-3" class="complete-button btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
                         </div>
                     </div>
                     <div class="w-[300px] h-[317px] rounded-xl bg-[#F4F7FF]">
                         <div class="w-[275px] h-[200px]  mt-4 mx-auto space-y-5">
                             <p class="w-[114px] h-[40px] text-[16px] font-normal text-[#00303C] bg-slate-50 text-center py-2 rounded-lg ">Meta</p>
-                            <p class="text-[24px] font-medium text-[#00303C]">Add new emoji 🤲</p>
+                            <p id="p-text-4" class="text-[24px] font-medium text-[#00303C]">Add new emoji 🤲</p>
                             <p class="w-[275px] h-[92px] bg-slate-50 p-4 overflow-hidden text-[#4e4d4d] rounded-lg ">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly
@@ -141,13 +141,13 @@
                             <p class="text-[#00303C] text-[14px]">Deadline</p>
                             <p class="text-[#00303C] text-[18px] font-semibold">21 March 2025</p>
                           </div>
-                          <button class="btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
+                          <button id="complete-4" class="complete-button btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
                         </div>
                     </div>
                     <div class="w-[300px] h-[317px]  rounded-xl bg-[#F4F7FF]">
                         <div class="w-[275px] h-[200px]  mt-4 mx-auto space-y-5">
                             <p class="w-[114px] h-[40px] text-[16px] font-normal text-[#00303C] bg-slate-50 text-center py-2 rounded-lg ">Google LLC</p>
-                            <p class="text-[24px] font-medium text-[#00303C]">Integrate OpenAI API </p>
+                            <p id="p-text-5" class="text-[24px] font-medium text-[#00303C]">Integrate OpenAI API </p>
                             <p class="w-[275px] h-[92px] bg-slate-50 p-4 overflow-hidden text-[#4e4d4d] rounded-lg ">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly
@@ -158,13 +158,13 @@
                             <p class="text-[#00303C] text-[14px]">Deadline</p>
                             <p class="text-[#00303C] text-[18px] font-semibold">21 March 2025</p>
                           </div>
-                          <button class="btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
+                          <button id="complete-5" class="complete-button btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
                         </div>
                     </div>
                     <div class="w-[300px] h-[317px]  rounded-xl bg-[#F4F7FF]">
                         <div class="w-[275px] h-[200px]  mt-4 mx-auto space-y-5">
                             <p class="w-[114px] h-[40px] text-[16px] font-normal text-[#00303C] bg-slate-50 text-center py-2 rounded-lg ">Glassdoor</p>
-                            <p class="text-[22px] font-medium text-[#00303C]">Improve Job searching </p>
+                            <p id="p-text-6" class="text-[22px] font-medium text-[#00303C]">Improve Job searching </p>
                             <p class="w-[275px] h-[92px] bg-slate-50 p-4 overflow-hidden text-[#4e4d4d] rounded-lg ">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly
@@ -175,23 +175,27 @@
                             <p class="text-[#00303C] text-[14px]">Deadline</p>
                             <p class="text-[#00303C] text-[18px] font-semibold">21 March 2025</p>
                           </div>
-                          <button id="complete-btn-6" class="btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
+                          <button id="complete-btn-6" class="complete-button btn text-white border-none rounded-lg shadow-none bg-[#3752FD] ">Completed</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-[300px] h-[918px] shadow-lg rounded-2xl ">
-              <div class="space-y-5 h-[110px] border-b-4 border-dashed border-[#F4F7FF]  "> 
+            <div class="w-[300px] h-[918px] shadow-lg rounded-2xl bg-[#FFFFFF]">
+              <div  class="space-y-5 h-[110px] border-b-4 border-dashed border-[#F4F7FF]  "> 
                 <div class="flex gap-3 justify-center items-center mt-6">
                     <img src="assets/activity.png" alt="">
                     <p class="text-[20px] font-medium text-[#00303C]">Activity Log</p>
                 </div>
-                <button class="btn text-white  rounded-lg shadow-none mx-[87px] bg-[#3752FD] border-none">Clear History</button>
+                <button id="clear-history" class="btn text-white  rounded-lg shadow-none mx-[87px] bg-[#3752FD] border-none">Clear History</button>
+                <div id="history-container">
+
+                </div>
             </div>
             </div>
             </div>
         </div>
     </main>
+    <script src="script/utilities.js"></script>
     <script src="script/answer.js"></script>
     <script src="script/index.js"></script>
     
