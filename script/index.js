@@ -44,10 +44,12 @@ div.classList.add("text-center");
 div.classList.add("mt-4");
 
           div.innerHTML = `
-         <p> You have Complete ${text1} at ${Time} </p>
+         <p> You have Complete The Task ${text1} at ${Time} </p>
           `
           container.appendChild(div)
  })
+
+
  document.getElementById('complete-2').addEventListener('click', function(){
    const taskCount1 = taskCount - 2;
    document.getElementById('task-count').innerText = taskCount1 ;
@@ -69,10 +71,13 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text2} at ${Time}  </p>
+         <p> You have Complete The Task ${text2} at ${Time}  </p>
           `
           container.appendChild(div)
  })
+
+
+
  document.getElementById('complete-3').addEventListener('click', function(){
    const taskCount1 = taskCount - 3;
            document.getElementById('task-count').innerText = taskCount1 ;
@@ -93,10 +98,13 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text3} at ${Time} </p>
+         <p> You have Complete The Task ${text3} at ${Time} </p>
           `
           container.appendChild(div)
  })
+
+
+
  document.getElementById('complete-4').addEventListener('click', function(){
    const taskCount1 = taskCount - 4;
            document.getElementById('task-count').innerText = taskCount1 ;
@@ -119,10 +127,14 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text4} at ${Time} </p>
+         <p> You have Complete The Task ${text4} at ${Time} </p>
           `
           container.appendChild(div)
  })
+
+
+
+
  document.getElementById('complete-5').addEventListener('click', function(){
    const taskCount1 = taskCount - 5;
            document.getElementById('task-count').innerText = taskCount1 ;
@@ -144,10 +156,14 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text5} at  ${Time} </p>
+         <p> You have Complete The Task ${text5} at  ${Time} </p>
           `
           container.appendChild(div)
  })
+
+
+
+ 
  document.getElementById('complete-btn-6').addEventListener('click', function(){
 
    const taskCount1 = taskCount - 6;
@@ -170,7 +186,7 @@ const checkboxCount1 = checkboxCount + 2;
             div.classList.add("mt-4");
             
           div.innerHTML = `
-         <p> You have Complete ${text6} at ${Time} </p>
+         <p> You have Complete The Task ${text6} at ${Time} </p>
           `
           container.appendChild(div)
  })
@@ -185,9 +201,9 @@ document.getElementById('new-date').textContent = new Date().toDateString();
 
 
 document.getElementById('bg-btn').addEventListener('click', function(){
-   let red = Math.floor(Math.random() * 256);
-   let green = Math.floor(Math.random() * 256);
-   let blue = Math.floor(Math.random() * 256);
-   document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})
-   `
+   const red = Math.floor(Math.random() * 256);
+   const green = Math.floor(Math.random() * 256);
+   const blue = Math.floor(Math.random() * 256);
+   document.body.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")"
+
 })
